@@ -4,12 +4,11 @@ import Header from "./Components/Header";
 import { BrowserRouter, Routes, Route } from "react-router"
 
 export default function App() {
-	// const [page, setPage] = useState("home");
 
 	return (
 		<div className="app-wrapper">
 			<BrowserRouter>
-				<Header /*setPage={setPage}*/ />
+				<Header />
 				<div className="content-container">
 					<Routes>
 						<Route path="/" element={<Home />} />
@@ -24,6 +23,5 @@ export default function App() {
 }
 
 /*
-	realized we need to have the header inside the router
-	and   
+	   
  */
